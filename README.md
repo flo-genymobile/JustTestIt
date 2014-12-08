@@ -33,3 +33,4 @@ The tests can be ran on a real device using:
 
   `$./gradlew connectedAndroidTest`
   
+Note that this gradle task doesn't seem to be running all the espresso tests. To run each test, create a custom run configuration...
