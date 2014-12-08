@@ -6,8 +6,6 @@ import android.view.View;
 import com.genymobile.testit.MainActivity;
 import com.genymobile.testit.R;
 
-import static android.test.ViewAsserts.assertOnScreen;
-
 public class MainActivityEspressoTest extends ActivityInstrumentationTestCase2<MainActivity> {
 
     private View batteryLevelView;
@@ -25,6 +23,6 @@ public class MainActivityEspressoTest extends ActivityInstrumentationTestCase2<M
     }
 
     public void testBatteryLevelViewIsShown() {
-        assertOnScreen(mainActivity.getWindow().getDecorView(), batteryLevelView);
+        assertEquals(false, batteryLevelView.getVisibility());
     }
 }

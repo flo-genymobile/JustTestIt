@@ -12,6 +12,8 @@
         android:id="@+id/battery_level_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="batteryview"
+        android:visibility="visible"
         android:background="@android:color/holo_green_dark" />
 
 </RelativeLayout>
