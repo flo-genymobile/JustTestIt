@@ -24,7 +24,7 @@ public class FragmentActivityEspressoTest extends ActivityUnitTestCase<FragmentA
                 FragmentActivity.class);
         startActivity(intent, null, null);
         activity = getActivity();
-        
+
         activity.getFragmentManager().executePendingTransactions();
     }
 

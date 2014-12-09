@@ -23,6 +23,6 @@ public class MainActivityEspressoTest extends ActivityInstrumentationTestCase2<M
     }
 
     public void testBatteryLevelViewIsShown() {
-        assertEquals(false, batteryLevelView.getVisibility());
+        assertEquals(true, batteryLevelView.getVisibility());
     }
 }
