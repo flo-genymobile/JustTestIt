@@ -12,10 +12,12 @@ buildscript {
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.0.2"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "com.genymobile.testit"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
@@ -49,8 +51,16 @@ dependencies {
         exclude group: 'org.hamcrest'
     }
 
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
-    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+    androidTestCompile 'com.android.support:support-annotations:21.0.3'
+
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.0') {
+        exclude module: 'junit-dep'
+    }
+
+    androidTestCompile('com.android.support.test:testing-support-lib:0.1') {
+        exclude module: 'junit-dep'
+    }
+
 
     androidTestCompile('org.robolectric:robolectric:2.3') {
         exclude module: 'classworlds'
@@ -71,4 +81,3 @@ dependencies {
         exclude group: 'org.objenesis'
     }
 }
-
