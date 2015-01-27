@@ -1,20 +1,13 @@
-package com.genymobile.testit.espresso;
+package com.genymobile.testit;
 
 import android.app.Fragment;
 import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
 import android.test.ActivityInstrumentationTestCase2;
 import android.widget.Button;
 
-import com.genymobile.testit.FragmentActivity;
-import com.genymobile.testit.R;
-
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 
-@RunWith(AndroidJUnit4.class)
 public class FragmentActivityEspressoTest extends ActivityInstrumentationTestCase2<FragmentActivity> {
 
     private FragmentActivity activity;
@@ -32,14 +25,12 @@ public class FragmentActivityEspressoTest extends ActivityInstrumentationTestCas
         assertNotNull("Cannot start test acitivty is NULL", activity);
     }
 
-    @Test
-    public void checkFragmentIsShown() {
+    public void testCheckFragmentIsShown() {
         int containerId = R.id.fragment_container;
         assertNotNull(activity.findViewById(containerId));
     }
 
-    @Test
-    public void checkThatButtonIsShown() {
+    public void testCheckThatButtonIsShown() {
         int containerId = R.id.fragment_container;
         assertNotNull(activity.findViewById(containerId));
 

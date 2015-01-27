@@ -1,4 +1,4 @@
-package com.genymobile.testit;
+package com.example;
 
 import org.junit.runners.model.InitializationError;
 import org.robolectric.AndroidManifest;
