@@ -38,10 +38,10 @@ android {
     }
 }
 
-robolectric {
-    include '**/*Test.class'
-    exclude '**/espresso/**/*.class'
-}
+//robolectric {
+//    include '**/*Test.class'
+//    exclude '**/espresso/**/*.class'
+//}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])

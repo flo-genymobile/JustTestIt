@@ -1,4 +1,4 @@
-package com.genymobile.testit.espresso;
+package com.genymobile.testit;
 
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;

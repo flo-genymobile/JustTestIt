@@ -1,4 +1,4 @@
-package com.genymobile.testit.espresso;
+package com.genymobile.testit;
 
 import android.app.Fragment;
 import android.support.test.InstrumentationRegistry;
