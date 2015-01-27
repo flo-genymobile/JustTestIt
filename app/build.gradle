@@ -13,6 +13,7 @@ android {
         versionCode 1
         versionName "1.0"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -32,17 +33,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile project(':core')
 
-    androidTestCompile('junit:junit:4.12-beta-2') {
-        exclude group: 'org.hamcrest'
-    }
-
-    androidTestCompile 'com.android.support:support-annotations:21.0.3'
-
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.0') {
-        exclude module: 'junit-dep'
-    }
-
-    androidTestCompile('com.android.support.test:testing-support-lib:0.1') {
-        exclude module: 'junit-dep'
-    }
+    compile 'com.android.support:support-annotations:21.0.3'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
 }
